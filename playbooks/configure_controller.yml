@@ -2,6 +2,13 @@
 - name: Playbook to configure ansible controller post installation
   hosts: localhost
   connection: local
+
+  collections:
+    - ansible.platform
+    - ansible.controller
+    - ansible.hub
+    - ansible.eda
+
   tasks:
     - name: Include vars from configs directory
       ansible.builtin.include_vars:
@@ -13,5 +20,5 @@
 
     - name: Call dispatch role
       ansible.builtin.include_role:
-        name: infra.controller_configuration.dispatch
+        name: infra.platform_configuration.dispatch
 ...

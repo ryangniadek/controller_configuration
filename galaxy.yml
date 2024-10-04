@@ -1,7 +1,7 @@
 ---
 namespace: infra
-name: controller_configuration
-version: 2.9.0-devel
+name: platform_configuration
+version: "1.0.0"
 description: A collection of roles to manage Ansible Controller
 readme: README.md
 authors:
